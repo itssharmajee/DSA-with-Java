@@ -8,7 +8,7 @@ public class lambda{
         });
         thread1.start();
 
-        // Thread 2
+        // Thread 8
         Thread thread2 = new Thread(() -> {
             for (int i = 0; i < 5; i++) {
                 System.out.println("hi");
