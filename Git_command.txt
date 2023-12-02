@@ -1,0 +1,5 @@
+if you do anytype of midification you will have to add we we did
+generally we do git add *
+then git commit -m "message"
+then git push orogin main 
+that's all we do 
