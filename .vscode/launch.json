@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "JavaFontChange",
+            "request": "launch",
+            "mainClass": "Swing.JavaFontChange",
+            "projectName": "JAVA_72d9c41b"
+        },
+        {
+            "type": "java",
+            "name": "JTextAreaExp",
+            "request": "launch",
+            "mainClass": "Swing.JTextAreaExp",
+            "projectName": "JAVA_72d9c41b"
+        },
+        {
+            "type": "java",
+            "name": "JRadioButtonExp",
+            "request": "launch",
+            "mainClass": "Swing.JRadioButtonExp",
+            "projectName": "JAVA_72d9c41b"
+        },
+        {
+            "type": "java",
             "name": "JButtionExp",
             "request": "launch",
             "mainClass": "Swing.JButtionExp",
