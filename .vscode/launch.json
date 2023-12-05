@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "JButtionExp",
+            "request": "launch",
+            "mainClass": "Swing.JButtionExp",
+            "projectName": "JAVA_72d9c41b"
+        },
+        {
+            "type": "java",
             "name": "Calculate",
             "request": "launch",
             "mainClass": "Swing.Calculate",
