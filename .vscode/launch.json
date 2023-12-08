@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "JComboboxExp",
+            "request": "launch",
+            "mainClass": "Swing.JComboboxExp",
+            "projectName": "JAVA_72d9c41b"
+        },
+        {
+            "type": "java",
             "name": "JavaFontChange",
             "request": "launch",
             "mainClass": "Swing.JavaFontChange",
