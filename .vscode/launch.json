@@ -6,6 +6,55 @@
     "configurations": [
         {
             "type": "java",
+            "name": "TraversalOnGraph",
+            "request": "launch",
+            "mainClass": "Graphs.TraversalOnGraph",
+            "projectName": "JAVA_72d9c41b"
+        },
+        {
+            "type": "java",
+            "name": "CreateGraph",
+            "request": "launch",
+            "mainClass": "Graphs.CreateGraph",
+            "projectName": "JAVA_72d9c41b"
+        },
+        {
+            "type": "java",
+            "name": "JProgressExp",
+            "request": "launch",
+            "mainClass": "Swing.JProgressExp",
+            "projectName": "JAVA_72d9c41b"
+        },
+        {
+            "type": "java",
+            "name": "JColorChooser_ActionListener",
+            "request": "launch",
+            "mainClass": "Swing.JColorChooser_ActionListener",
+            "projectName": "JAVA_72d9c41b"
+        },
+        {
+            "type": "java",
+            "name": "JColorExp",
+            "request": "launch",
+            "mainClass": "Swing.JColorExp",
+            "projectName": "JAVA_72d9c41b"
+        },
+        {
+            "type": "java",
+            "name": "JTableExp",
+            "request": "launch",
+            "mainClass": "Swing.JTableExp",
+            "projectName": "JAVA_72d9c41b"
+        },
+        {
+            "type": "java",
+            "name": "Combocreation",
+            "request": "launch",
+            "mainClass": "Swing.Combocreation",
+            "projectName": "JAVA_72d9c41b"
+        },
+        {
+            "type": "java",
             "name": "JComboboxExp",
             "request": "launch",
             "mainClass": "Swing.JComboboxExp",

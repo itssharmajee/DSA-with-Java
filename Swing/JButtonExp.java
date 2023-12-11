@@ -3,7 +3,7 @@ package Swing;
 import javax.swing.*;
 import java.awt.*;
 
-public class JButtionExp {
+public class JButtonExp {
     public static void main(String[] args) {
         // JFrame frame=new JFrame("Button example");
         // JButton b=new JButton("click me !");// with parameter

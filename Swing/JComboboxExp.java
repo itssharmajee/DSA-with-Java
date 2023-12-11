@@ -27,7 +27,7 @@ public class JComboboxExp {
         */
         
 
-        // Implemetation of JComboBox without ActionListener
+        // Implemetation of JComboBox with ActionListener
         f=new JFrame("example");
         l=new JLabel(" ");
         jb=new JButton("Display");
