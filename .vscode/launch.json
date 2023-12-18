@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "BinaryTreeExp",
+            "request": "launch",
+            "mainClass": "BinaryTreeExp",
+            "projectName": "JAVA_72d9c41b"
+        },
+        {
+            "type": "java",
+            "name": "InetAddressExp",
+            "request": "launch",
+            "mainClass": "Networking.InetAddressExp",
+            "projectName": "JAVA_72d9c41b"
+        },
+        {
+            "type": "java",
             "name": "TraversalOnGraph",
             "request": "launch",
             "mainClass": "Graphs.TraversalOnGraph",
