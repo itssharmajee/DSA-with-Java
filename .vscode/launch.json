@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "HeightOfTree",
+            "request": "launch",
+            "mainClass": "HeightOfTree",
+            "projectName": "JAVA_72d9c41b"
+        },
+        {
+            "type": "java",
             "name": "BinaryTreeExp",
             "request": "launch",
             "mainClass": "BinaryTreeExp",

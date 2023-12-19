@@ -99,13 +99,35 @@ public class BinaryTreeExp {
             return 0;
         }
 
-        if (root.data == -1) {
-            return 0; // Exclude markers from the count
-        }
-
         int leftNodes = countNodes(root.left);
         int rightNodes = countNodes(root.right);
         return leftNodes + rightNodes + 1;
+    }
+
+    // function to find out the sum of all nodes data
+    public static int sumOfNodes(Node root){
+        if(root==null){
+            return 0;
+        }
+
+        if(root.data==-1){
+            return 0;
+        }
+        int leftNodesData=sumOfNodes(root.left);
+        int rightNodesData=sumOfNodes(root.right);
+        return leftNodesData+rightNodesData+root.data;
+
+    }
+
+    //function to find out height of the tree 
+
+    public static int height(Node root){
+        if(root==null){
+            return 0;
+        }
+        int leftSubTreeHeight=height(root.left);
+        int rightSubTreeHeight=height(root.right);
+        return Math.max(leftSubTreeHeight, rightSubTreeHeight)+1;
     }
 
     public static void main(String[] args) {
@@ -119,7 +141,10 @@ public class BinaryTreeExp {
         // postorder(root);
         // levelOrder(root);
 
-        int totalNoOfNodes = countNodes(root);
-        System.out.println("Total number of nodes: " + totalNoOfNodes);
+        // int totalNoOfNodes = countNodes(root);
+        // System.out.println("Total number of nodes: " + totalNoOfNodes);
+
+    //     System.out.println(sumOfNodes(root));
+        System.out.println(height(root));
     }
 }
