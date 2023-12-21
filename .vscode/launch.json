@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "InnerClass",
+            "request": "launch",
+            "mainClass": "InnerClass",
+            "projectName": "JAVA_72d9c41b"
+        },
+        {
+            "type": "java",
             "name": "BinarySearchTree",
             "request": "launch",
             "mainClass": "BST.BinarySearchTree",

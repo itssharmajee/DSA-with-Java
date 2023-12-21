@@ -8,7 +8,7 @@ public class InetAddressExp{
         try{
         //     InetAddress address=InetAddress.getLocalHost();
         // System.out.println(address);
-        InetAddress adr=InetAddress.getByName("www.youtube.com");
+        InetAddress adr=InetAddress.getByName("youtube.com");
         System.out.println(adr);
         }catch(UnknownHostException e){
             System.out.println(e.getMessage());
