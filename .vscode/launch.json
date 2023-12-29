@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "test",
+            "request": "launch",
+            "mainClass": "Properties_class.test",
+            "projectName": "JAVA_72d9c41b"
+        },
+        {
+            "type": "java",
+            "name": "DeadLockExample",
+            "request": "launch",
+            "mainClass": "DeadLockExample",
+            "projectName": "JAVA_72d9c41b"
+        },
+        {
+            "type": "java",
             "name": "InnerClass",
             "request": "launch",
             "mainClass": "InnerClass",
