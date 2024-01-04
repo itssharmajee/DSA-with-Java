@@ -14,6 +14,6 @@ public class fibonacci {
         return fibo(n-1)+fibo(n-2);
     }
     public static void main(String argv[]){
-        System.out.println(fibo(15));
+        System.out.println(fibo(3));
     }
 }

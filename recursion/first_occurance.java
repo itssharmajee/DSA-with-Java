@@ -13,7 +13,7 @@ public class first_occurance {
 
     public static void main(String argv[]){
         int arr[] = {1,2,4,5,6,4,6,4};
-        int key=40;
+        int key=4;
         System.out.println(firstOccurance(arr, key, 0));
     }
 }
