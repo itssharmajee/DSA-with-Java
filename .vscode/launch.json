@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "SortingExp",
+            "request": "launch",
+            "mainClass": "Sorting_Algorithm.SortingExp",
+            "projectName": "JAVA_72d9c41b"
+        },
+        {
+            "type": "java",
+            "name": "Trailing_Zeroes",
+            "request": "launch",
+            "mainClass": "MIx_Questions.Trailing_Zeroes",
+            "projectName": "JAVA_72d9c41b"
+        },
+        {
+            "type": "java",
             "name": "test",
             "request": "launch",
             "mainClass": "Properties_class.test",

@@ -258,7 +258,7 @@ import java.util.*;
 
 public class Demo{
 
-    public static void main(String[] args) {
+    // public static void main(String[] args) {
         // LinkedList <String> np = new LinkedList<>();
         // np.addFirst("Sapna");
         // np.addFirst("Deepak");
@@ -280,15 +280,68 @@ public class Demo{
         // System.out.println(arr.get(0));
         // System.out.println(arr.size());
 
-        Stack <Integer> st = new Stack<>();
-        st.push(14);
-        st.push(34);
-        st.push(23);
-        st.push(35);
-        st.addFirst(12);
-        st.set(3, 89);
-        System.out.println(st.get(4));;
-        System.out.println(st);
+        // Stack <Integer> st = new Stack<>();
+        // st.push(14);
+        // st.push(34);
+        // st.push(23);
+        // st.push(35);
+        // st.addFirst(12);
+        // st.set(3, 89);
+        // System.out.println(st.get(4));;
+        // System.out.println(st);
+        
+        // for (int index = 1; index < 10; index++) {
+        //     for (int j = 1; j < index; j++) {
+        //         System.out.print("*"+" ");
+        //     }
+        //     System.out.println();
+        // }
 
-    }
+    //     int arr[] = new int[]{12,1,3,10,14,11,16,17};
+    //     traversal(arr);
+    //     for (int i : arr) {
+    //         System.out.println(i);
+    //     }
+
+    // }
+    // public static void traversal(int arr[]) {
+    //     int n = arr.length;
+    
+    //     // Outer loop for each element
+    //     for (int i = 0; i < n - 1; i++) {
+    //         // Inner loop to compare and swap elements
+    //         for (int j = 0; j < n - i - 1; j++) {
+    //             if (arr[j] > arr[j + 1]) {
+    //                 // Swap elements if they are in the wrong order
+    //                 int temp = arr[j];
+    //                 arr[j] = arr[j + 1];
+    //                 arr[j + 1] = temp;
+    //             }
+    //         }
+    //     }
+
+    // this function will find the tralling zeroes in factorial of num
+        public static void rec(int num){
+            int count = 0;
+            int i=1;
+            while(true){
+                if(i%5==0){
+                    count ++;
+
+                }
+                if(i==num){
+                    break;
+                }
+                i++;
+            } 
+            System.out.println(count+" zeroes");
+        }
+
+    
+        public static void main(String[] args) {
+            // int num=4;
+            // rec(num);
+
+        }
 }
+
