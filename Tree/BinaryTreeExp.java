@@ -35,7 +35,7 @@ public class BinaryTreeExp {
     // Function to perform preorder traversal (root --> left sub-tree --> right sub-tree)
     public static void preorder(Node root) {
         if (root == null) {
-            System.out.print(-1 + " "); // Print -1 for null nodes
+            //System.out.print(-1 + " "); // Print -1 for null nodes
             return;
         }
         System.out.print(root.data + " ");
@@ -131,20 +131,23 @@ public class BinaryTreeExp {
     }
 
     public static void main(String[] args) {
-        int nodes[] = {1, 2, 4, -1, -1, 5, -1, -1, 3, -1, 6, -1, -1};
+        int nodes[] ={1,  2, 4, -1, -1, 5, -1, -1, 3, -1, 6, -1, -1};
         BinaryTree tree = new BinaryTree();
         Node root = tree.buildTree(nodes);
 
         // Uncomment the method calls below to see different traversals and counts
-        // preorder(root);
-        // inorder(root);
-        // postorder(root);
-        // levelOrder(root);
+        preorder(root);
+        System.out.println();
+        inorder(root);
+        System.out.println();
+        postorder(root);
+        System.out.println();
+        levelOrder(root);
 
         // int totalNoOfNodes = countNodes(root);
         // System.out.println("Total number of nodes: " + totalNoOfNodes);
 
     //     System.out.println(sumOfNodes(root));
-        System.out.println(height(root));
+        // System.out.println(height(root));
     }
 }

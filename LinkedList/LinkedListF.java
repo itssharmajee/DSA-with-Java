@@ -1,5 +1,6 @@
 package LinkedList;
 import java.util.LinkedList;
+import java.util.*;
 public class LinkedListF {
     public static void main(String[] args) {
         LinkedList<Integer> s =new LinkedList<>();
@@ -13,6 +14,10 @@ public class LinkedListF {
         s.remove();
         System.out.println(s);
         System.out.println(s.size());
-        System.out.println("sapna i love you ");
+        System.out.println(" ");
+        Iterator it = s.iterator();
+        while(it.hasNext()){
+            System.out.println(it.next());
+        }
     }
 }
