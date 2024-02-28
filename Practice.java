@@ -1,5 +1,12 @@
 import java.util.*;
 public class Practice {
+
+    public static void printArray(int arr[]){
+        for (int i : arr) {
+            System.out.print(i+ " ");
+        }
+    }
+
     public static int searchElement(int arr[], int x){
         for(int i = 0; i<arr.length; i++){
             if(arr[i] == x){
@@ -46,6 +53,53 @@ public class Practice {
 
     }
 
+
+    // public static void reverseArray(int arr[]){
+    //     int back = arr.length-1;
+    //     for(int i=0; i<arr.length/2; i++){
+    //         int temp = arr[i];
+    //         arr[i] = arr[back];
+    //         arr[back] =temp;
+    //         back--;
+    //     }
+    // }
+
+    // or you can do it like 
+
+    public static void reverseArray(int arr[]){
+        int start = 0, end = arr.length - 1;
+        while (start < end) {
+            int temp = arr[start];
+            arr[start] = arr[end];
+            arr[end] = temp;
+            start++;
+            end--;
+        }
+    }
+
+    /*
+    // it is not more optimized code for finding the max subarray sum 
+    public static void maxArraySum(int arr[]){
+        int max = Integer.MIN_VALUE;
+        int min = Integer.MAX_VALUE;
+        for (int i = 0; i < arr.length; i++) {
+            int start = i;
+            for (int j = i; j < arr.length; j++) {
+                int end = j;
+                int sum = 0;
+                for (int k = start; k <=end; k++) {
+                    
+                    sum +=arr[k];
+                }
+                if(sum > max){
+                    max = sum ;
+                }
+            }
+        }
+        System.out.println(max);
+    }
+    */
+
     public static void main(String[] args) {
     //     Scanner sc = new Scanner(System.in);
     //     System.out.println("Enter the size of array");
@@ -72,7 +126,12 @@ public class Practice {
 
     int arr[] = {2,4,6,8,10};
     // noOfPairs(arr);
-    printSubArray(arr);
+    // printSubArray(arr);
+
+    // reverseArray(arr);
+    // printArray(arr);
+
+    maxArraySum(arr);
 
 
     }

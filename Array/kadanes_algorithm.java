@@ -41,11 +41,12 @@ public class kadanes_algorithm {
     public static void main(String argv[]){
         // this is for miture element means negative and positive
         int arr[] = {-2,-3,4,-1,-2,1,500,-3};
-        kadanes(arr);
+        // kadanes(arr);
         
         // but all the elments value is negative then it will return zero 
-        int arr1[] = {-2,-3,-4,-1,-2,2010,-5,-3};
-        kadanesForAll(arr1);
+        int arr1[] = {-2,-3,-4,-1,-2,-5,-3};
+        // kadanesForAll(arr1);
+        kadanes(arr1);
         
     }
 }
