@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Stock",
+            "request": "launch",
+            "mainClass": "Array.Stock",
+            "projectName": "JAVA_72d9c41b"
+        },
+        {
+            "type": "java",
             "name": "Practice",
             "request": "launch",
             "mainClass": "Practice",

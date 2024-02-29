@@ -131,7 +131,7 @@ public class Practice {
     // reverseArray(arr);
     // printArray(arr);
 
-    maxArraySum(arr);
+    // maxArraySum(arr);
 
 
     }
