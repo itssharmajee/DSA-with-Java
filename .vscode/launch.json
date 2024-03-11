@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Searching",
+            "request": "launch",
+            "mainClass": "Searching_Algorithm.Searching",
+            "projectName": "JAVA_72d9c41b"
+        },
+        {
+            "type": "java",
             "name": "Stock",
             "request": "launch",
             "mainClass": "Array.Stock",

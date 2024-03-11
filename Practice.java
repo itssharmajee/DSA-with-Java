@@ -77,6 +77,19 @@ public class Practice {
         }
     }
 
+
+    public static void bubbleSort(int arr[]){
+        for (int i = 0; i < arr.length-1; i++) {
+            for (int j = 0; j < arr.length-1-i; j++) {
+                if(arr[j] >arr[j+1] ){
+                    int temp = arr[j];
+                    arr[j] = arr[j+1];
+                    arr[j+1]= temp;
+                }
+                
+            }
+        }
+    }
     /*
     // it is not more optimized code for finding the max subarray sum 
     public static void maxArraySum(int arr[]){
@@ -124,7 +137,7 @@ public class Practice {
     // int arr[] = {12,13,1,3,32};
     // System.out.println(largestValue(arr));
 
-    int arr[] = {2,4,6,8,10};
+    int arr[] = {2,4,6,8,10,1};
     // noOfPairs(arr);
     // printSubArray(arr);
 
@@ -133,6 +146,8 @@ public class Practice {
 
     // maxArraySum(arr);
 
+    bubbleSort(arr);
+    printArray(arr);
 
     }
 }
