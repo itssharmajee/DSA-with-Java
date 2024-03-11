@@ -1,15 +1,10 @@
-package Network_Programming;
+import java.io.*;
+import java.net.*;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.net.ServerSocket;
-import java.net.Socket;
-
-public class ServerExample {
+public class Server {
 
     public static void main(String[] args) {
-        int portNumber = 5555;
+        int portNumber = 5000;
 
         try (ServerSocket serverSocket = new ServerSocket(portNumber)) {
             System.out.println("Server is waiting for client on port " + portNumber);
