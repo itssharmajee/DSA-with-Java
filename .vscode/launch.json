@@ -6,6 +6,69 @@
     "configurations": [
         {
             "type": "java",
+            "name": "LinkedList",
+            "request": "launch",
+            "mainClass": "LinkedList",
+            "projectName": "JAVA_72d9c41b"
+        },
+        {
+            "type": "java",
+            "name": "DSA_Practice",
+            "request": "launch",
+            "mainClass": "DSA_Practice",
+            "projectName": "JAVA_72d9c41b"
+        },
+        {
+            "type": "java",
+            "name": "Gridways",
+            "request": "launch",
+            "mainClass": "Backtracking.Gridways",
+            "projectName": "JAVA_72d9c41b"
+        },
+        {
+            "type": "java",
+            "name": "NQueen",
+            "request": "launch",
+            "mainClass": "Backtracking.NQueen",
+            "projectName": "JAVA_72d9c41b"
+        },
+        {
+            "type": "java",
+            "name": "NQeen",
+            "request": "launch",
+            "mainClass": "Backtracking.NQeen",
+            "projectName": "JAVA_72d9c41b"
+        },
+        {
+            "type": "java",
+            "name": "AdvancedPattern",
+            "request": "launch",
+            "mainClass": "AdvancedPattern",
+            "projectName": "JAVA_72d9c41b"
+        },
+        {
+            "type": "java",
+            "name": "Practice_Java_on_recusion",
+            "request": "launch",
+            "mainClass": "Practice_Java_on_recusion",
+            "projectName": "JAVA_72d9c41b"
+        },
+        {
+            "type": "java",
+            "name": "Class_Interface",
+            "request": "launch",
+            "mainClass": "Class_Interface",
+            "projectName": "JAVA_72d9c41b"
+        },
+        {
+            "type": "java",
+            "name": "PrintingPattern",
+            "request": "launch",
+            "mainClass": "PrintingPattern",
+            "projectName": "JAVA_72d9c41b"
+        },
+        {
+            "type": "java",
             "name": "Searching",
             "request": "launch",
             "mainClass": "Searching_Algorithm.Searching",
