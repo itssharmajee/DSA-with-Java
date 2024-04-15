@@ -187,27 +187,100 @@ public class LinkedList {
     // will find the position from the starting 
     // another method is also there like firstly reversed linked then perform an action
     
-    public static void deleteNthfromEnd(int n){
-        // calculate the size
-        int sz =0;
-        Node temp=head;
-        while(temp!=null){
-            temp=temp.next;
-            sz++;
-        }
-        if(sz==n){
-            head=head.next;
+    public static void deleteNthfromEnd(int n) {
+        // Edge case: If the list is empty
+        if (head == null) {
+            System.out.println("List is empty");
             return;
         }
-
-        int i=1;
+    
+        // Calculate the size of the list
+        int size = 0;
+        Node temp = head;
+        while (temp != null) {
+            temp = temp.next;
+            size++;
+        }
+    
+        // Edge case: If n is greater than the size of the list
+        if (n > size) {
+            System.out.println("Invalid position");
+            return;
+        }
+    
+        // Edge case: If the node to delete is the head
+        if (size == n) {
+            head = head.next;
+            return;
+        }
+    
+        // Traverse the list to find the node before the one to delete
+        int i = 1;
         Node prev = head;
-        while (i<(sz-n+1)-1) {
-            prev=prev.next;
+        while (i < (size - n)) {
+            prev = prev.next;
             i++;
         }
-        prev.next=prev.next.next;
-        return;
+    
+        // Delete the nth node from the end
+        prev.next = prev.next.next;
+    }
+    
+
+    public static boolean palindrome(String str){// simple palindrome function for string
+        for (int i = 0,j=str.length()-1; i < str.length()&&j>= str.length()/2; i++,j--) {
+            if(str.charAt(i)!=str.charAt(j)){
+                return false;
+            }
+        }
+        return true;
+    }
+
+
+
+    // to find out palindrome we have one most important concept that is slow-fast concept 
+    // (turtle)-slow , (hare)-fast concept this is used to find out mid -point
+
+    public Node slowFast(Node head){// working as helper function for palindrome 
+        Node slow = head;
+        Node fast = head;
+
+        while(fast !=null && fast.next!=null){
+            slow=slow.next;
+            fast=fast.next.next;
+        }
+        return slow;
+    }
+
+    public boolean checkPalindrome(){
+        if(head==null || head.next ==null){
+            return true;
+        }
+        // find mid value
+        Node midNode=slowFast(head);
+
+        // reversing 2nd half
+        Node prev = null;
+        Node curr = midNode;
+        Node next;
+        while (curr!=null) {
+            next = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = next;
+        }
+        Node right = prev;
+        Node left = head;
+
+        //check left half & right half
+        while (right!=null) {
+            if (left.data != right.data) {
+                return false;
+            }
+            left = left.next;
+            right = right.next;
+        }
+        return true;
     }
     public static void main(String[] args) {
         LinkedList li = new LinkedList();
@@ -244,8 +317,11 @@ public class LinkedList {
         // li.print();
 
 
-        deleteNthfromEnd(3);
-        li.print();
+        // deleteNthfromEnd(11);
+        // li.print();
+        // System.out.println(palindrome("saas"));
+
+        System.out.println(li.checkPalindrome());
 
 
     }
