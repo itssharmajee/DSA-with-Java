@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ActivitySelection",
+            "request": "launch",
+            "mainClass": "Greedy_Approach.ActivitySelection",
+            "projectName": "JAVA_72d9c41b"
+        },
+        {
+            "type": "java",
+            "name": "Question",
+            "request": "launch",
+            "mainClass": "Greedy_Approach.Question",
+            "projectName": "JAVA_72d9c41b"
+        },
+        {
+            "type": "java",
+            "name": "Practice_on_stack",
+            "request": "launch",
+            "mainClass": "Practice_on_stack",
+            "projectName": "JAVA_72d9c41b"
+        },
+        {
+            "type": "java",
+            "name": "Doubly",
+            "request": "launch",
+            "mainClass": "LinkedList.Doubly",
+            "projectName": "JAVA_72d9c41b"
+        },
+        {
+            "type": "java",
+            "name": "ZigZag",
+            "request": "launch",
+            "mainClass": "LinkedList.ZigZag",
+            "projectName": "JAVA_72d9c41b"
+        },
+        {
+            "type": "java",
             "name": "Floyds",
             "request": "launch",
             "mainClass": "LinkedList.Floyds",
